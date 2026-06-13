@@ -12,6 +12,9 @@ dependencies = [
   "isaaclab",
   "isaaclab_rl",
   "isaaclab_tasks",
+  "isaacsim",
+  "torch==2.7.0",
+  "torchvision==0.22.0",
   "gymnasium",
 ]
 
@@ -29,4 +32,8 @@ flatdict = ["setuptools"]
 isaaclab = { path = "../IsaacLab/source/isaaclab", editable = true }
 isaaclab_rl = { path = "../IsaacLab/source/isaaclab_rl", editable = true }       # Changed to underscore
 isaaclab_tasks = { path = "../IsaacLab/source/isaaclab_tasks", editable = true } # Changed to underscore
+isaacsim = { index = "nvidia" }
 
+[[tool.uv.index]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
