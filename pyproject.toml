@@ -7,7 +7,7 @@ name = "so-arm101-block"
 version = "0.0.0"
 description = "SO-ARM101 stick-blocking external Isaac Lab project"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.12"
 dependencies = [
   "isaaclab",
   "isaaclab_rl",
