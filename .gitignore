@@ -1,5 +1,40 @@
 logs/
-__pycache__/
-.venv/
 outputs/
+
+# ─── Python ──────────────────────────────
+__pycache__/
 *.egg-info/
+.coverage
+
+# ─── Virtual environment ──────────────────
+.venv/
+
+# ─── Tooling caches ───────────────────────
+.pytest_cache/
+.ruff_cache/
+
+# ─── Build artifacts ──────────────────────
+dist/
+build/
+
+# ─── Dependencies ─────────────────────────
+node_modules/
+
+# ─── TaskTrail data & state ───────────────
+data/state_store.db/
+data/stream_store/
+*.bin
+tasks.json
+tasks.md
+
+# ─── Secrets & local config ───────────────
+.env
+.env.*
+CLAUDE.local.md
+
+# ─── Aider ────────────────────────────────
+.aider*
+
+# ─── Logs & OS cruft ──────────────────────
+*.log
+.DS_Store
