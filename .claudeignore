@@ -1,0 +1,23 @@
+# ─── Dependencies ────────────────────────────────────────────────
+node_modules/
+
+# ─── Persisted state (TaskTrail memory + stream stores) ───────────
+# Binary blobs with URL-encoded keys — no value as context.
+data/state_store.db/
+data/stream_store/
+
+# Catch-all for any binary state written elsewhere
+*.bin
+
+# ─── Secrets (also enforce via .claude/settings.json permissions.deny) ─
+.env
+.env.*
+*.pem
+*.key
+
+# ─── Build / log / OS noise ───────────────────────────────────────
+dist/
+build/
+*.log
+.DS_Store
+
