@@ -1,10 +1,8 @@
-"""RSL-RL PPO config stub."""
+"""PPO runner config stubs."""
 
 from isaaclab.utils import configclass
 
 
 @configclass
-class SOARM101BlockPPOCfg:
-    """PPO config stub."""
-
+class BlockPPORunnerCfg:
     pass

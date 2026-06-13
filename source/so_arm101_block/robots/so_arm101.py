@@ -1,10 +1,3 @@
-"""SO-ARM101 articulation config stub."""
+"""SO-ARM101 robot config stubs."""
 
-from isaaclab.utils import configclass
-
-
-@configclass
-class SOARM101Cfg:
-    """SO-ARM101 robot config stub."""
-
-    pass
+SO_ARM101_CFG = None  # TODO: ArticulationCfg

@@ -1,0 +1,10 @@
+{
+  "openai/POWER-HOUSE": {
+    "max_input_tokens": 200000,
+    "max_output_tokens": 32000,
+    "input_cost_per_token": 0.000015,
+    "output_cost_per_token": 0.000075,
+    "litellm_provider": "openai",
+    "mode": "chat"
+  }
+}

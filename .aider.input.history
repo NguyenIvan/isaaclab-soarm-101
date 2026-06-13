@@ -1,0 +1,113 @@
+
+# 2026-05-27 20:56:33.635003
++N
+
+# 2026-05-28 09:45:58.008720
++n
+
+# 2026-05-28 09:46:09.744789
++exit
+
+# 2026-05-28 09:51:12.675947
++quit
+
+# 2026-06-12 12:46:36.680914
++what is the name for this project?
+
+# 2026-06-12 14:50:26.007057
++delete src folder
+
+# 2026-06-12 14:53:51.175676
++/git rm -r src/
+
+# 2026-06-13 08:40:57.970728
++yes
+
+# 2026-06-13 08:41:01.539047
++Inspect repo for `isaaclab-rl` dependency declaration and real local package location.
++
++Find:
++- where `isaaclab-rl` is named
++- whether repo has root `pyproject.toml`, workspace metadata, or package metadata
++- actual package dir that should satisfy dep, if any
++
++Return only:
++- files inspected
++- exact lines / keys involved
++- likely cause of `uv sync` failure
++- no edits
+
+# 2026-06-13 08:41:35.141010
++Add those files mentioned above
+
+# 2026-06-13 08:42:09.543477
++/ls
+
+# 2026-06-13 08:42:58.435906
++git status --short
+
+# 2026-06-13 08:43:17.174288
++/git status --short
+
+# 2026-06-13 08:43:39.778897
++Fix dependency resolution for `isaaclab-rl` so `uv sync` stops looking in package registry.
++
++Use smallest change possible:
++- if local package exists, wire root project to it via path/workspace/source metadata
++- if package name mismatch, correct name in metadata
++- if package metadata missing, add minimal uv/package metadata needed for local resolve
++
++Do not change runtime logic.
++
++After edit, summarize:
++- files changed
++- why resolver now finds dep
++- any follow-up needed
+
+# 2026-06-13 08:45:40.308236
++Add these files:  • pyproject.toml
++ • uv.toml or workspace.toml if present
++ • uv.lock or other lockfile
++ • source/**/pyproject.toml
++ • setup.py
++ • setup.cfg
++
+
+# 2026-06-13 08:48:06.239913
++/add pyproject.toml uv.toml workspace.toml uv.lock lockfile source/**/pyproject.toml setup.py setup.cfg
+
+# 2026-06-13 08:48:18.640925
++No
+
+# 2026-06-13 08:48:35.419186
++/files
+
+# 2026-06-13 08:48:46.169123
++/ls
+
+# 2026-06-13 08:49:08.856781
++Fix dependency resolution for `isaaclab-rl` so `uv sync` stops looking in package registry.
++
++Use smallest change possible:
++- if local package exists, wire root project to it via path/workspace/source metadata
++- if package name mismatch, correct name in metadata
++- if package metadata missing, add minimal uv/package metadata needed for local resolve
++
++Do not change runtime logic.
++
++After edit, summarize:
++- files changed
++- why resolver now finds dep
++- any follow-up needed
+
+# 2026-06-13 10:13:34.313814
++/git check in
+
+# 2026-06-13 10:13:46.687193
++git check in and push
+
+# 2026-06-13 10:13:56.776468
++/add *
+
+# 2026-06-13 10:14:02.500108
++git check in and push

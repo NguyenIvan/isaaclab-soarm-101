@@ -1,0 +1,10 @@
+
+model: openai/POWER-HOUSE
+openai-api-base: http://localhost:20128/v1
+openai-api-key: sk-6c0bd03866e96a3a-k0d0xw-f71bc249
+auto-commits: true
+dirty-commits: true
+attribute-author: true
+commit-prompt: "Write a concise conventional commit message (type: description) for these changes."
+read:
+  - CLAUDE.md
